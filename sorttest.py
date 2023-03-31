@@ -26,14 +26,15 @@ while looping:
             break
 
     elif (val == "2"):
-         print("\n-Skriver listnumbers med slumpade tal---------")
-         listnummers2 = listnummers
-         sortmodule.print_list_numbers(listnummers)
-         print("\n-sorterar med pyhton sort-------")
+        print("\n-Skriver listnumbers med slumpade tal---------")
+        listnummers2 = listnummers
+        sortmodule.print_list_numbers(listnummers)
+        print("\n-sorterar med pyhton sort-------")
         listnummers2.sort()
         sortmodule.print_list_numbers(listnummers2)
         listnummers2.sort()
-         if(forsatt == "n"):
+        
+        if(forsatt == "n"):
             break
 
         print("val 2")
