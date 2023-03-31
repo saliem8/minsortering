@@ -1,5 +1,5 @@
-def bubble_sort(test): 
-    tlist = test.copy(test)
+def bubble_sort(tset): 
+    tlist = tset.copy()
     langd = len(tlist)
     bytplats = False
 
@@ -11,7 +11,7 @@ def bubble_sort(test):
                 bytplats = True
                 tlist[j], tlist[j + 1] = tlist[j + 1], tlist[j] 
         
-        if not byplats:
+        if not bytplats:
             return
         
     return tlist
@@ -19,6 +19,7 @@ def bubble_sort(test):
 def print_list_numbers(tlist):
     string_nr = " ".join(str(num) for num in tlist)
     print(string_nr)
+    
 
 def create_menu():
     print("\n-----:MENY SORTERINGS TEST-------------\n")
